@@ -1,0 +1,108 @@
+body {
+  background-color: #f9f9f9;
+}
+.main-container {
+  background-color: #f9f9f9;
+  margin-top: 63px;
+}
+.profile-container {
+  background-color: #fcfff2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.profile-header .profile-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.profile-header .profile-image img {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.profile-body .total p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.profile-body .total .total-number {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #6a6a6a;
+}
+
+.view-button,
+.setting-icon {
+  background: #12a15d;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  margin: 20px 0;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s transform;
+  border: 2px solid transparent;
+
+  padding: 10px 20px;
+  gap: 10px;
+}
+.view-button,
+.setting-icon:hover {
+  transform: scale(0.98);
+}
+.setting-icon {
+  border: 2px solid #12a15d;
+  box-shadow: none;
+  font-size: 0.6rem;
+  padding: 10px 12px;
+  background-color: #fff;
+}
+.setting-icon .fa-gear {
+  font-size: 20px;
+  color: #12a15d;
+}
+.worklists-container {
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-body .card-title .dispute,
+.claim {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  color: #eb5757;
+}
+.card-body .card-title .claim {
+  color: #12a15d;
+}
+.card-body {
+  padding: 0.2rem 1rem;
+}
+.card-body .card-title .new {
+  background: #12a15d;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 3px 12px;
+  border-radius: 1rem;
+}
+.card-body .card-title .arrow-right .fa-solid {
+  font-size: 22px;
+  color: #12a15d;
+}

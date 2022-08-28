@@ -1,0 +1,77 @@
+body {
+  background-color: #f9f9f9;
+}
+.container {
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+/* HEADER BUTTON STYLE */
+.table-header h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+}
+.role,
+.all-users,
+.add-new-admin {
+  background-color: #ffff;
+  color: #12a15d;
+  border: 2px solid #12a15d;
+  padding: 6px 0px;
+  box-shadow: -4px 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-size: 14px;
+}
+.add-new-admin {
+  color: #fff;
+  background-color: #12a15d;
+}
+
+/* TABLE STYLE */
+
+.container {
+  min-height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.table-body {
+  min-height: 70vh;
+  overflow: auto;
+}
+.container .table-body::-webkit-scrollbar {
+  display: none;
+}
+.table > :not(caption) > * > * {
+  padding: 20px 30px !important;
+}
+thead tr th,
+tbody tr td {
+  color: #12a15d;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
+tbody tr td {
+  color: #969696;
+}
+tbody tr button.veiw-btn {
+  background-color: #12a15d;
+  color: #fff;
+  border-radius: 12px;
+  padding: 3px 17px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+tbody tr button.remove-btn {
+  background-color: #fff;
+  color: #12a15d;
+  border: 1px solid #12a15d;
+  border-radius: 12px;
+  padding: 3px 17px;
+}

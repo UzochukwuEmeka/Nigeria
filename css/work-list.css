@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid #e8e8e8;
+  box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.new {
+  background-color: #eb5757;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0px 8px;
+}
+.dispute-text {
+  color: #eb5757;
+}
+.fa-arrow-right {
+  color: #12a15d;
+  font-size: 20px;
+}
+.due-text,
+.claim-text {
+  color: #12a15d;
+}

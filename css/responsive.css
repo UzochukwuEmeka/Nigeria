@@ -1,0 +1,8 @@
+/* HEADER BUTTON */
+@media (max-width: 1000px) {
+  .role,
+  .all-users,
+  .add-new-admin {
+    border-radius: 0px;
+  }
+}

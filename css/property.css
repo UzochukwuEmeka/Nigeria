@@ -1,0 +1,65 @@
+/* BUTTON STYLE */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+.veiw-owner-btn {
+  background: #12a15d;
+  color: #ffff;
+  border-radius: 30px;
+  width: 130px;
+  padding: 5px 10px;
+  margin-right: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+.status-btn {
+  background-color: #12a15d;
+  padding: 3px 10px;
+  width: 83px;
+  border-radius: 30px;
+  color: #ffff;
+}
+.under-validation {
+  width: 180px;
+  background: #f2994a;
+}
+.claim-request {
+  width: 140px;
+  background: #f2c94c;
+}
+.disputed {
+  background: #eb5757;
+  width: 89px;
+}
+.unclaimed {
+  width: 103px;
+  background: #2d9cdb;
+}
+.view-btn {
+  background-color: #ffff;
+  /* width: 106px; */
+  padding: 5px 0px;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  color: #12a15d;
+  border: 2px solid #12a15d;
+}
+.document-btn {
+  background-color: #12a15d;
+  color: #fff;
+}
+.estate-btn {
+  background-color: #f2994a;
+  border: 1px solid #f2994a;
+  color: #fff;
+}
+.add-new-property {
+  /* width: 150px; */
+  padding: 5px 2px !important;
+  /* border-radius: 30px; */
+}
