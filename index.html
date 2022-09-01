@@ -23,13 +23,9 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top  ">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#">
-                    <img
-                        src="image/coat.jpg"
-                        alt=""
-                        width="50"
-                        height="24"
-                        class="d-inline-block align-text-top me-5"
-                    >
+                    <div class="nav-image">
+                        <img src="image/coat.jpg" alt="" class="d-inline-block align-text-top me-5">
+                    </div>
                 </a>
                 <button
                     class="navbar-toggler"
@@ -48,22 +44,22 @@
                             <a class="nav-link active " aria-current="page" href="#">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Worklist</a>
+                            <a class="nav-link " href="work-list.html">Worklist</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Dues</a>
+                            <a class="nav-link " href="dues.html">Dues</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Event Log</a>
+                            <a class="nav-link " href="event-log.html">Event Log</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="users.html">Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
+                            <a class="nav-link" href="property.html">Properties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
+                            <a class="nav-link" href="profile.html">Profile</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a
@@ -88,10 +84,27 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item dropdown me-3">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="profile-log-out"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
                                 <i class="fa-solid fa-user"></i>
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="profile-log-out">
+                                <li>
+                                    <a class="dropdown-item" href="log-in.html">Log Out</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -240,7 +253,7 @@
                             <div class="profile-footer d-flex justify-content-around align-items-center">
                                 <div class="veiw-btn">
                                     <button class="view-button px-3">
-                                        Vewi Profile
+                                        <a href="profile.html">Vewi Profile</a>
                                         <i class="fa-solid fa-arrow-right me-4"></i>
                                     </button>
                                 </div>
@@ -259,7 +272,7 @@
                                 </div>
                                 <div class="veiw-btn mt-0 ">
                                     <button class="view-button px-3">
-                                        Vewi All
+                                        <a href="work-list.html"> Vewi All</a>
                                         <i class="fa-solid fa-arrow-right me-4 "></i>
                                     </button>
                                 </div>
@@ -301,5 +314,7 @@
                 </div>
             </div>
         </section>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/form.js"></script>
     </body>
 </html>

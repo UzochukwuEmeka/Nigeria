@@ -1,6 +1,20 @@
 body {
   background-color: #f9f9f9;
 }
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
 .main-container {
   background-color: #f9f9f9;
   margin-top: 63px;
@@ -46,7 +60,6 @@ body {
   border: 0;
   outline: 0;
   color: #fff;
-  border-radius: 10px;
   font-size: 0.9rem;
   margin: 20px 0;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
@@ -55,7 +68,7 @@ body {
   cursor: pointer;
   transition: 0.25s transform;
   border: 2px solid transparent;
-
+  border-radius: 20px;
   padding: 10px 20px;
   gap: 10px;
 }
@@ -69,6 +82,7 @@ body {
   font-size: 0.6rem;
   padding: 10px 12px;
   background-color: #fff;
+  border-radius: 15px;
 }
 .setting-icon .fa-gear {
   font-size: 20px;

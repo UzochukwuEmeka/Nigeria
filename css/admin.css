@@ -27,25 +27,38 @@
   line-height: 22px;
   color: #1b311d;
 }
+.card {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 .body-cards .row .card-header-one {
   background-color: #bb6bd9;
+
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .body-cards .row .card-header-two {
   background-color: #12a15d;
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .body-cards .row .card-header-three {
   background-color: #eb5757;
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .body-cards .row .card-header-four {
   background-color: #f2994a;
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .quick-action-container {
   background-color: #f1f3fb;

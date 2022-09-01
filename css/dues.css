@@ -3,10 +3,10 @@
 }
 .new-dues {
   padding: 10px 30px;
-  background: #12a15d;
+  background: var(--primary-color);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  color: #fff;
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -52,19 +52,19 @@ a:hover {
 .delete-btn {
   padding: 10px 20px;
   text-align: center;
-  background: #12a15d;
+  background: var(--primary-color);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .delete-btn {
-  background-color: #fff;
-  color: #12a15d;
-  border: 1px solid #12a15d;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 .page-link {
   background: #f1f3fb;
-  color: #12a15d;
+  color: var(--primary-color);
   border: 0px;
 }
 .page-link:hover {
@@ -97,13 +97,13 @@ a:hover {
 .save-btn,
 .cancel-btn {
   padding: 10px 30px;
-  background: #12a15d;
+  background: var(--primary-color);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  border: 1px solid #12a15d;
-  color: #fff;
+  border: 1px solid #f4f4f4;
+  color: var(--secondary-color);
 }
 .cancel-btn {
-  background-color: #fff;
-  color: #12a15d;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
