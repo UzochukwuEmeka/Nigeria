@@ -3,8 +3,6 @@
   background-color: #ffffff !important;
   z-index: 10;
   width: 100%;
-  /* padding-top: 0 !important; */
-  /* padding-bottom: 0 !important; */
 }
 .navbar-collapse {
   justify-content: flex-end;
@@ -53,4 +51,7 @@
 }
 .navbar-toggler:focus {
   box-shadow: none;
+}
+.nav-image {
+  height: 30px;
 }

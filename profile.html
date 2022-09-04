@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/modal.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -20,7 +21,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=M+PLUS+Rounded+1c:wght@700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,900&family=Ms+Madi&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Water+Brush&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top  ">
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top ">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#">
                     <img
@@ -45,25 +47,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active " aria-current="page" href="#">Dashboard</a>
+                            <a class="nav-link  " aria-current="page" href="#">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Worklist</a>
+                            <a class="nav-link " href="work-list.html">Worklist</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Dues</a>
+                            <a class="nav-link " href="dues.html">Dues</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Event Log</a>
+                            <a class="nav-link " href="event-log.html">Event Log</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="users.html">Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
+                            <a class="nav-link" href="property.html">Properties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
+                            <a class="nav-link active" href="#">Profile</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a
@@ -78,26 +80,46 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="activites.html">Property Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="activites.html">Activity Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="transaction-report.html">Transaction Report</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="user-report.html">User Report</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item dropdown me-3">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="profile-log-out"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
                                 <i class="fa-solid fa-user"></i>
                             </a>
+                            <ul class="dropdown-menu" aria-labelledby="profile-log-out">
+                                <li>
+                                    <a class="dropdown-item" href="log-in.html">Log Out</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- MAIN CONTAINER -->
+        <!-- MAIN CONTAINER  PROFILE CONTAINER-->
         <section>
             <div class="container-fluid main-container ">
                 <div class="row d-flex justify-content-center">
@@ -134,18 +156,21 @@
                                             <div class="col-8 text-center  ">
                                                 <div class="change-password-btn ">
                                                     <button class="change-password-button ">
-                                                        Change Password
+                                                        <a href="change-password.html">   Change Password</a>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col-2 text">
-                                                <i class="fa fa-sign-out ms-5 " aria-hidden="true"></i>
+                                                <a href="log-in.html">
+                                                    <i class="fa fa-sign-out ms-5 " aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- USER DETAIL CONTAINING PERSONAL DETAILS AND CONTACT DETAILS -->
                         <div class="user-details-container  ">
                             <div class="personal-details-container me-2  mb-2 d-flex justify-content-between align-items-center">
                                 <div class="personal-details">
@@ -156,8 +181,8 @@
                                     Edit
                                 </div>
                             </div>
-                            <div class="details-table table-responsive">
-                                <table class="table">
+                            <div class="details-table table-responsive ">
+                                <table class="table table-borderless">
                                     <thead>
                                         <tr>
                                             <th scope="col">Full NAme</th>
@@ -178,13 +203,13 @@
                                 <div class="personal-details">
                                     <h5>Contact Details</h5>
                                 </div>
-                                <div class="edit">
+                                <div class="edit" data-bs-toggle="modal" data-bs-target="#edit-contact-details">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                    <a href=""> Edit</a>
+                                    Edit
                                 </div>
                             </div>
                             <div class="details-table table-responsive">
-                                <table class="table ">
+                                <table class="table table-borderless">
                                     <thead>
                                         <tr>
                                             <th scope="col">Email</th>
@@ -203,7 +228,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- THE RIGHT SIDE OF THE CONTAINER CONTAINING OVERVIEW AND WORKLIST SUMMARY -->
                     <div class="col-lg-3 col-12   right-container  ">
+                        <!-- OVERVIEW -->
                         <div class="profile-container">
                             <div class="profile-header me-lg-4  me-5 pt-5">
                                 <div class="profile-text">
@@ -225,6 +252,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- WORKLIST -->
                         <div class="worklists-container">
                             <div class="worklist-header d-flex justify-content-around align-items-center">
                                 <div class="worklist-text mt-0 me-3 ">
@@ -292,7 +320,7 @@
                 </div>
             </div>
         </section>
-        <!-- Modal -->
+        <!-- MODAL FOR PROFILE CONTAINING PERSONAL DETAIL MODAL AND CONTACT DETAILS MODAL -->
         <div
             class="modal fade"
             id="edit-personal-details"
@@ -302,7 +330,7 @@
             aria-labelledby="edit-personal-details"
             aria-hidden="true"
         >
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog ">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="staticBackdropLabel">Personal Details</h4>
@@ -311,53 +339,123 @@
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <div>
-                                    <label for="exampleFormControlInput1" class="form-label">Name of Dues</label>
+                                    <label for="exampleFormControlInput1" class="form-label text-muted">Full Name</label>
                                     <input
                                         type="text"
                                         class="form-control personal-details-input "
                                         id="exampleFormControlInput1"
-                                        placeholder="Enter Dues to be paid"
+                                        placeholder="James Konoa"
                                     >
+                                    <label for="exampleFormControlInput1" class="form-label text-muted mt-2">You cannot change this</label>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div>
-                                    <label for="exampleFormControlInput1" class="form-label">Name of Dues</label>
+                                    <label for="exampleFormControlInput1" class="form-label text-muted">User ID</label>
+                                    <input
+                                        type="number"
+                                        class="form-control personal-details-input "
+                                        id="exampleFormControlInput1"
+                                        placeholder="1234560987"
+                                    >
+                                    <label for="exampleFormControlInput1" class="form-label text-muted mt-2"> You cannot change this</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gender mt-4">
+                            <p class="gender-text">Gender</p>
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                    <div class="row  d-flex justify-content-around">
+                                        <div class="col-3">Male</div>
+                                        <div class="col-4">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">Female</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                        <button type="button" class="save-btn" data-bs-dismiss="modal">Save</button>
+                        <button type="button" class="cancel-btn" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="modal fade"
+            id="edit-contact-details"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="edit-contact-details"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="staticBackdropLabel">Contact Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <div>
+                                    <label for="exampleFormControlInput1" class="form-label text-muted">Email Address</label>
                                     <input
                                         type="text"
                                         class="form-control personal-details-input "
                                         id="exampleFormControlInput1"
-                                        placeholder="Enter Dues to be paid"
+                                        placeholder="James Konoa"
+                                    >
+                                    <label for="exampleFormControlInput1" class="form-label text-muted mt-2">You cannot change this</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div>
+                                    <label for="exampleFormControlInput1" class="form-label text-muted">Phone Number</label>
+                                    <input
+                                        type="text"
+                                        class="form-control personal-details-input "
+                                        id="exampleFormControlInput1"
+                                        placeholder="08065438332"
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mt-3">
+                                <div>
+                                    <label for="exampleFormControlInput1" class="form-label text-muted">Division</label>
+                                    <input
+                                        type="text"
+                                        class="form-control personal-details-input "
+                                        id="exampleFormControlInput1"
+                                        placeholder="Select your Division"
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 mt-3">
+                                <div>
+                                    <label for="exampleFormControlInput1" class="form-label text-muted">State</label>
+                                    <input
+                                        type="text"
+                                        class="form-control personal-details-input "
+                                        id="exampleFormControlInput1"
+                                        placeholder="Select your state"
                                     >
                                 </div>
                             </div>
                         </div>
-                        <div class="gender">
-                            <p class="gender-text">Gender</p>
-                            <div class="switch d-flex ">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <span>Male</span>
-                                    </div>
-                                    <div class="col-6">
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </div>
-                                    <div class="col-3">
-                                        <span>Male</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                        <button type="button" class="save-btn" data-bs-dismiss="modal">Save</button>
+                        <button type="button" class="cancel-btn" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
             </div>
-        </body>
-        <script src="js/bootstrap.bundle.min.js"></script>
-    </html>
+        </div>
+    </body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</html>

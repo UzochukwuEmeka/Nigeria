@@ -6,7 +6,7 @@
 
 .new {
   background-color: #eb5757;
-  color: #fff;
+  color: var(--secondary-color);
   border-radius: 20px;
   padding: 0px 8px;
 }
@@ -14,10 +14,20 @@
   color: #eb5757;
 }
 .fa-arrow-right {
-  color: #12a15d;
+  color: var(--primary-color);
   font-size: 20px;
 }
 .due-text,
 .claim-text {
-  color: #12a15d;
+  color: var(--primary-color);
+}
+/* MODAL WORK-LIST */
+.status-tag {
+  background: #f2994a;
+  border-radius: 20px;
+  text-align: center;
+  padding: 4px 12px;
+  /* gap: 10px; */
+  /* width: 134px; */
+  /* height: 25px; */
 }

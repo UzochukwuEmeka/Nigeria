@@ -1,7 +1,6 @@
 .admin-container {
   background: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
 }
 .admin-container .admin-header h4 {
   font-family: "Inter";
@@ -27,29 +26,47 @@
   line-height: 22px;
   color: #1b311d;
 }
+.card {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 .body-cards .row .card-header-one {
   background-color: #bb6bd9;
+
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .body-cards .row .card-header-two {
   background-color: #12a15d;
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .body-cards .row .card-header-three {
   background-color: #eb5757;
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .body-cards .row .card-header-four {
   background-color: #f2994a;
   color: white;
   font-size: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.quick-action-container {
+.quick-action-container,
+.property-container {
   background-color: #f1f3fb;
   padding: 25px;
+  border-radius: 10px;
+}
+.property-container {
+  background-color: var(--secondary-color);
 }
 .quick-action-container .quick-action-link a {
   text-decoration: none;
