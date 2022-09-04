@@ -44,7 +44,7 @@
 }
 .back-btn,
 .add-document-btn {
-  padding: 9px 30px;
+  padding: 9px 15px;
   background: var(--primary-color);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -135,7 +135,8 @@
 
 .select-items div:hover,
 .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 /* Toggle Switch */
 .switch {
@@ -239,6 +240,10 @@ input:checked + .slider:before {
   cursor: pointer;
   width: 200px;
 }
+/* PROFILE EDIT CONTACT STYLE */
+.division .select-selected {
+  height: 46px;
+}
 
 @media screen and (max-width: 1000px) {
   .state-btn,
@@ -254,5 +259,8 @@ input:checked + .slider:before {
   .modal-text {
     text-align: center;
     font-size: 15px;
+  }
+  .property-clearance {
+    padding: 2px 2px;
   }
 }

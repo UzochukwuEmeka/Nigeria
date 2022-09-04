@@ -1,7 +1,6 @@
 .admin-container {
   background: #ffffff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
 }
 .admin-container .admin-header h4 {
   font-family: "Inter";
@@ -60,9 +59,14 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.quick-action-container {
+.quick-action-container,
+.property-container {
   background-color: #f1f3fb;
   padding: 25px;
+  border-radius: 10px;
+}
+.property-container {
+  background-color: var(--secondary-color);
 }
 .quick-action-container .quick-action-link a {
   text-decoration: none;

@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
         <link rel="stylesheet" href="css/users.css">
-        <link rel="stylesheet" href="css/user-report.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/modal.css">
@@ -47,7 +46,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link  " aria-current="page" href="index.html">Dashboard</a>
+                            <a class="nav-link  " aria-current="page" href="#">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="work-list.html">Worklist</a>
@@ -59,7 +58,7 @@
                             <a class="nav-link " href="event-log.html">Event Log</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="users.html">Users</a>
+                            <a class="nav-link " href="users.html">Users</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="property.html">Properties</a>
@@ -80,7 +79,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="property-report.html">Property</a>
+                                    <a class="dropdown-item" href="property-report.html">Property Report</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="user-report.html">User Report</a>
@@ -124,8 +123,8 @@
                 <div class="col-12 mt-4">
                     <div class="container p-5 ">
                         <div class="table-header row d-flex justify-content-between align-items-center  ">
-                            <div class=" col-lg-3 col-12 text-center me-4 me-lg-0 mb-2 ps-5 user">
-                                <h4>Users Report</h4>
+                            <div class=" col-lg-3 col-12 text-center me-4 me-lg-0 mb-2 ps-5 user ">
+                                <h4>Activites Report</h4>
                             </div>
                             <div class="header-button col-lg-8 col-12 ">
                                 <div class="row d-flex justify-content-between align-items-center">
@@ -143,12 +142,12 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-3 mb-2">
-                                        <div class="add-new-admin export-csv-btn text-center " data-bs-toggle="modal" data-bs-target="#export-csv-modal">
+                                        <div class="add-new-admin export-csv-btn text-center " data-bs-toggle="modal" data-bs-target="#activites-modal">
                                             Export As CSV
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-3 mb-2">
-                                        <div class="add-new-admin text-center" data-bs-target="#share-report-modal" data-bs-toggle="modal">
+                                        <div class="add-new-admin text-center" data-bs-target="#activite-share-report" data-bs-toggle="modal">
                                             Share Report
                                         </div>
                                     </div>
@@ -159,86 +158,76 @@
                             <table class="table  table-responsive">
                                 <thead>
                                     <tr>
-                                        <th scope="col">User ID</th>
-                                        <th scope="col">Role</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">LGA</th>
-                                        <th scope="col">State</th>
+                                        <th scope="col">Event ID</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Activites</th>
+                                        <th scope="col">User</th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            001
+                                            00001
                                         </td>
-                                        <td id="role">Admin</td>
-                                        <td id="name">John Itan</td>
+                                        <td id="role">27/7/2022</td>
+                                        <td id="name">Dispute</td>
                                         <td id="email">JohnItan@gmail.com</td>
-                                        <td id="LGA">Wuse</td>
-                                        <td id="state">Abuja</td>
+                                        <td id="LGA">Decline</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            001
+                                            00001
                                         </td>
-                                        <td id="role">Admin</td>
-                                        <td id="name">John Itan</td>
+                                        <td id="role">27/7/2022</td>
+                                        <td id="name">Dispute</td>
                                         <td id="email">JohnItan@gmail.com</td>
-                                        <td id="LGA">Wuse</td>
-                                        <td id="state">Abuja</td>
+                                        <td id="LGA">Decline</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            001
+                                            00001
                                         </td>
-                                        <td id="role">Admin</td>
-                                        <td id="name">John Itan</td>
+                                        <td id="role">27/7/2022</td>
+                                        <td id="name">Dispute</td>
                                         <td id="email">JohnItan@gmail.com</td>
-                                        <td id="LGA">Wuse</td>
-                                        <td id="state">Abuja</td>
+                                        <td id="LGA">Decline</td>
                                     </tr>
                                     <tr class="m-5">
                                         <td>
-                                            001
+                                            00001
                                         </td>
-                                        <td id="role">Admin</td>
-                                        <td id="name">John Itan</td>
+                                        <td id="role">27/7/2022</td>
+                                        <td id="name">Dispute</td>
                                         <td id="email">JohnItan@gmail.com</td>
-                                        <td id="LGA">Wuse</td>
-                                        <td id="state">Abuja</td>
+                                        <td id="LGA">Decline</td>
                                     </tr>
                                     <tr class="m-5">
                                         <td>
-                                            001
+                                            00001
                                         </td>
-                                        <td id="role">Admin</td>
-                                        <td id="name">John Itan</td>
+                                        <td id="role">27/7/2022</td>
+                                        <td id="name">Dispute</td>
                                         <td id="email">JohnItan@gmail.com</td>
-                                        <td id="LGA">Wuse</td>
-                                        <td id="state">Abuja</td>
+                                        <td id="LGA">Decline</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            001
+                                            00001
                                         </td>
-                                        <td id="role">Admin</td>
-                                        <td id="name">John Itan</td>
+                                        <td id="role">27/7/2022</td>
+                                        <td id="name">Dispute</td>
                                         <td id="email">JohnItan@gmail.com</td>
-                                        <td id="LGA">Wuse</td>
-                                        <td id="state">Abuja</td>
+                                        <td id="LGA">Decline</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            001
+                                            00001
                                         </td>
-                                        <td id="role">Admin</td>
-                                        <td id="name">John Itan</td>
+                                        <td id="role">27/7/2022</td>
+                                        <td id="name">Dispute</td>
                                         <td id="email">JohnItan@gmail.com</td>
-                                        <td id="LGA">Wuse</td>
-                                        <td id="state">
-                                            Abuja
-                                        </td>
+                                        <td id="LGA">Decline</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -247,10 +236,11 @@
                 </div>
             </div>
         </div>
+        <!-- Document Modal To EXPORT AS CSV -->
         <!--  EXPORT AS CSV MODAL -->
         <div
             class="modal fade"
-            id="export-csv-modal"
+            id="activites-modal"
             aria-hidden="true"
             aria-labelledby="tansaction-modalLabel"
             tabindex="-1"
@@ -283,7 +273,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-12  order-lg-1 ">
-                            <h4 class="modal-text">Documents</h4>
+                            <h3 class="modal-text">Documents</h3>
                         </div>
                         <div class="col-lg-4  px-md-4 col-6">
                             <!-- ADD DOCUMENT BUTTON -->
@@ -352,7 +342,6 @@
                 </div>
             </div>
         </div>
-        <!-- ADD DOCUMENT MODAL -->
         <div
             class="modal fade"
             id="exampleModalToggle2"
@@ -419,12 +408,11 @@
                 </div>
             </div>
         </div>
-        <!-- MODAL FOR SHARE REPORT -->
         <div
             class="modal fade"
-            id="share-report-modal"
+            id="activite-share-report"
             aria-hidden="true"
-            aria-labelledby="share-reportLabel"
+            aria-labelledby="activite-share-reportLabel"
             tabindex="-1"
             data-bs-backdrop="static"
         >
@@ -541,6 +529,7 @@
                 </div>
             </div>
         </div>
+        <!-- ESTATE MODAL -->
         <div
             class="modal fade"
             id="estate-add"

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/property.css">
+        <link rel="stylesheet" href="css/card.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -81,16 +82,16 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="#">Property</a>
+                                    <a class="dropdown-item" href="property.html">Property</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">User Report</a>
+                                    <a class="dropdown-item" href="user-report.html">User Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Tansaction Report</a>
+                                    <a class="dropdown-item" href="transaction-report.html">Tansaction Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Activity Report</a>
+                                    <a class="dropdown-item" href="activites.html">Activity Report</a>
                                 </li>
                             </ul>
                         </li>
@@ -124,12 +125,16 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-12 mt-4">
                     <div class="container p-5 ">
+                        <!-- PROPERTIES CONTAINER -->
                         <div class="table-header row d-flex justify-content-between align-items-center  ">
+                            <!-- PROPERTY TABLE HEADER -->
                             <div class=" col-lg-1 col-12 text-center ms-5 ps-5 user">
                                 <h4>Properties</h4>
                             </div>
+                            <!-- PROPERTY HEADER BUTTON -->
                             <div class="header-button col-lg-10 col-12 ">
                                 <div class="row d-flex justify-content-end align-items-center">
+                                    <!-- PROPERTY BUTTON TO FILTER STATE -->
                                     <div class="col-12 col-lg-2 mb-2">
                                         <div class="role text-center">
                                             <i class="fa fa-filter ms-3 ms-lg-2" aria-hidden="true"></i>
@@ -143,17 +148,20 @@
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </div>
                                     </div>
+                                    <!-- PROPERTY BUTTON TO ADD PROPERTY -->
                                     <div class="col-12 col-lg-3 mb-2">
                                         <div class="add-new-property add-new-admin export-csv-btn text-center " data-bs-toggle="modal" data-bs-target="#add-new-property">
                                             <i class="fa fa-add" aria-hidden="true"></i>
                                             Add New Property
                                         </div>
                                     </div>
+                                    <!-- PROPERTY BUTTON TO ADD DOCUMENT WITH MODAL -->
                                     <div class="col-12 col-lg-2 mb-2">
                                         <div class="add-new-admin document-btn text-center" data-bs-toggle="modal" data-bs-target="#properties-document">
                                             Documents
                                         </div>
                                     </div>
+                                    <!-- PROPERTY BUTTON TO VIEW ESTATE WITH MODAL -->
                                     <div class="col-12 col-lg-2 mb-2">
                                         <div
                                             class="all-users text-center estate-btn"
@@ -167,8 +175,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- PROPERTY TABLE BODY -->
                         <div class="table-body  mt-4">
-                            <table class="table table-borderless ">
+                            <table class="table  ">
+                                <!-- TABLE HEADER -->
                                 <thead>
                                     <tr>
                                         <th scope="col">Property ID</th>
@@ -179,6 +189,7 @@
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
+                                <!-- TABLE BODY -->
                                 <tbody>
                                     <tr>
                                         <td>
@@ -195,8 +206,8 @@
                                         <div class="status-btn">Claimed</div>
                                     </td>
                                     <td id="veiw">
-                                        <div class="view-btn">
-                                            <a href="">Veiw</a>
+                                        <div class="view-btn" data-bs-target="#property-card" data-bs-toggle="modal">
+                                            <a href="#">Veiw</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -214,8 +225,8 @@
                                         <div class="status-btn disputed">Disputed</div>
                                     </td>
                                     <td id="veiw">
-                                        <div class="view-btn">
-                                            <a href=""> Veiw</a>
+                                        <div class="view-btn" data-bs-target="#property-card" data-bs-toggle="modal">
+                                            <a href="#"> Veiw</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -236,8 +247,8 @@
                                         </div>
                                     </td>
                                     <td id="veiw">
-                                        <div class="view-btn">
-                                            <a href=""> Veiw</a>
+                                        <div class="view-btn" data-bs-target="#property-card" data-bs-toggle="modal">
+                                            <a href="#"> Veiw</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -255,8 +266,8 @@
                                         <div class="status-btn claim-request">Claim Request</div>
                                     </td>
                                     <td id="veiw">
-                                        <div class="view-btn">
-                                            <a href=""> Veiw</a>
+                                        <div class="view-btn" data-bs-target="#property-card" data-bs-toggle="modal">
+                                            <a href="#"> Veiw</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -264,7 +275,7 @@
                                     <td>
                                         <div class=" mb-3" id="property-id">000001</div>
                                         <div class="veiw-owner-btn">
-                                            <a href="">veiw owner</a>
+                                            <a href="#">veiw owner</a>
                                         </div>
                                     </td>
                                     <td id="role">Abuja</td>
@@ -276,8 +287,8 @@
                                         </div>
                                     </td>
                                     <td id="veiw">
-                                        <div class="view-btn">
-                                            <a href=""> Veiw</a>
+                                        <div class="view-btn" data-bs-target="#property-card" data-bs-toggle="modal">
+                                            <a href="#"> Veiw</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -500,14 +511,16 @@
         >
             <div class="modal-dialog modal-dialog-centered modal-lg  ">
                 <div class="modal-content">
+                    <!-- MODAL HEADER -->
                     <div class="modal-header row justify-content-between text-center">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-6 align-self-start order-2">
+                            <!-- FLITER STATE BUTTON -->
                             <div class="select-state">
                                 <div class="btn-group" role="group">
                                     <button
                                         id="btnGroupDrop1"
                                         type="button"
-                                        class="btn state-btn dropdown-toggle"
+                                        class="btn state-btn dropdown-toggle "
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                     >
@@ -524,10 +537,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 ">
-                            <h5 class="modal-text">Documents</h5>
+                        <div class="col-lg-3 col-12  order-lg-1 ">
+                            <h4 class="modal-text">Documents</h4>
                         </div>
-                        <div class="col-4 ">
+                        <div class="col-lg-4  px-md-4 col-6">
+                            <!-- ADD DOCUMENT BUTTON -->
                             <div class="add-document">
                                 <div class="" role="group">
                                     <button
@@ -546,6 +560,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- MODAL BODY  -->
                     <div class="modal-body">
                         <div class="modal-document-count">
                             <h5>
@@ -558,39 +573,33 @@
                         </div>
                         <div class="row justify-content-center mt-3 ">
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center ">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0  " id="cancel"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
-                                    Addition of Properties
-                                    <i class=" fa fa-times me-4"></i>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
-                                    Addition of Dues
-                                    <i class=" fa fa-times me-4"></i>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-9 mb-2">
+                                <div class="property-clearance text-center">
+                                    Property Clearance
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
                                 </div>
                             </div>
                         </div>
@@ -677,11 +686,14 @@
         >
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
+                    <!-- MODAL ESTATE HEADER -->
                     <div class="modal-header row justify-content-around align-items-center mt-4">
                         <div class="col-12 col-lg-3">
                             <h4>Estates</h4>
                         </div>
+                        <!-- MODAL ESTATE HEADER BUTTON -->
                         <div class="col-12 col-lg-8 d-flex justify-content-around">
+                            <!-- ESTATE FILTER BUTTON -->
                             <div class="btn-group" role="group">
                                 <button
                                     id="btnGroupDrop1"
@@ -701,6 +713,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- FLITER LOCAL GOVERNMENT BUTTON -->
                             <div class="btn-group" role="group">
                                 <button
                                     id="btnGroupDrop1"
@@ -720,6 +733,7 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- ADD DOCUMENT BUUTON -->
                             <div class="add-document">
                                 <div class="" role="group">
                                     <button
@@ -738,6 +752,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ESTATE MODAL BODY -->
                     <div class="modal-body mt-3">
                         <div class="number-of-esate me-4 ">
                             <h5>
@@ -836,6 +851,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- MODAL ESTATE FOOTER -->
                     <div class="modal-footer justify-content-start">
                         <button
                             class="btn back-btn"
@@ -849,6 +865,110 @@
                             data-bs-toggle="modal"
                             data-bs-dismiss="modal"
                         >Add Estate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL FOR CARDS -->
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="property-card"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-dialog-card modal-lg" style="max-width: 380px;">
+                <div class="modal-content">
+                    <img src="image/house.jpg" alt="" class="img-fluid">
+                    <div class="modal-content-body">
+                        <div class="modal-header row d-flex ">
+                            <div class="txt col-6">
+                                <h5>Property 1238909</h5>
+                            </div>
+                            <div class="stat col-6">
+                                <div class="status">
+                                    Under-Validation
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="address">
+                                    <p class="txt">Address</p>
+                                    <p class="text-muted  fs-6">No. 2 Adamu Bello Street. Maitama; Abuja</p>
+                                </div>
+                                <div class="features">
+                                    <div class="size">
+                                        <p class="txt">Size</p>
+                                        <p class="text-muted  fs-6">2.7 acres</p>
+                                    </div>
+                                    <div class="LGA">
+                                        <p class="txt">Local Government Area</p>
+                                        <p class="text-muted  fs-6">Wuse LGA</p>
+                                    </div>
+                                </div>
+                                <!-- ATTACHMENT OF DOCUMENT -->
+                                <div class="attachment">
+                                    <div class="txt mb-3">
+                                        <p>Attachment</p>
+                                    </div>
+                                    <div class="attached-document row d-flex justify-content-start ">
+                                        <div class="doc col-4 me-2">
+                                            <img
+                                                src="image/pdf.png"
+                                                alt=""
+                                                class="img-fluid"
+                                                style="height:100%;"
+                                            >
+                                        </div>
+                                        <div class="doc col-4 me-2">
+                                            <img
+                                                src="image/pdf.png"
+                                                alt=""
+                                                class="img-fluid"
+                                                style="height:100%;"
+                                            >
+                                        </div>
+                                        <div class="doc col-4 me-2">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="mt-4">
+                                        <div class="date text-muted text-start" id="date-comment">14 Jan</div>
+                                        <label for="exampleFormControlInput1" class="form-label txt">Disputer's Comment</label>
+                                        <textarea class="form-control  text-muted " aria-label="With textarea" rows="7"></textarea>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="date text-muted text-start" id="date-reply">15 Jan</div>
+                                        <label for="exampleFormControlInput1" class="form-label txt">Reply</label>
+                                        <textarea class="form-control description text-muted " aria-label="With textarea" rows="7"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-start mt-4 ms-3">
+                                    <button
+                                        class="btn add-document-btn "
+                                        id="add-property"
+                                        data-bs-toggle="modal"
+                                        data-bs-dismiss="modal"
+                                    >Approve</button>
+                                    <button
+                                        class="btn add-document-btn add-property"
+                                        id="add-property"
+                                        data-bs-toggle="modal"
+                                        data-bs-dismiss="modal"
+                                    >Decline</button>
+                                    <button
+                                        class="btn add-document-btn bg-white "
+                                        id="back"
+                                        data-bs-toggle="modal"
+                                        data-bs-dismiss="modal"
+                                    >Back</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

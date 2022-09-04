@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/modal.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -20,6 +21,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=M+PLUS+Rounded+1c:wght@700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,900&family=Ms+Madi&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Water+Brush&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- NAV BAR -->
         <nav class="navbar navbar-expand-lg navbar-light  fixed-top ">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#">
@@ -48,19 +50,19 @@
                             <a class="nav-link  " aria-current="page" href="#">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Worklist</a>
+                            <a class="nav-link " href="work-list.html">Worklist</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Dues</a>
+                            <a class="nav-link " href="dues.html">Dues</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Event Log</a>
+                            <a class="nav-link " href="event-log.html">Event Log</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="users.html">Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
+                            <a class="nav-link" href="property.html">Properties</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Profile</a>
@@ -78,13 +80,16 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="activites.html">Property Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="activites.html">Activity Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="transaction-report.html">Transaction Report</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="user-report.html">User Report</a>
                                 </li>
                             </ul>
                         </li>
@@ -114,7 +119,7 @@
                 </div>
             </div>
         </nav>
-        <!-- MAIN CONTAINER -->
+        <!-- MAIN CONTAINER  PROFILE CONTAINER-->
         <section>
             <div class="container-fluid main-container ">
                 <div class="row d-flex justify-content-center">
@@ -165,6 +170,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- USER DETAIL CONTAINING PERSONAL DETAILS AND CONTACT DETAILS -->
                         <div class="user-details-container  ">
                             <div class="personal-details-container me-2  mb-2 d-flex justify-content-between align-items-center">
                                 <div class="personal-details">
@@ -175,8 +181,8 @@
                                     Edit
                                 </div>
                             </div>
-                            <div class="details-table table-responsive">
-                                <table class="table">
+                            <div class="details-table table-responsive ">
+                                <table class="table table-borderless">
                                     <thead>
                                         <tr>
                                             <th scope="col">Full NAme</th>
@@ -203,7 +209,7 @@
                                 </div>
                             </div>
                             <div class="details-table table-responsive">
-                                <table class="table ">
+                                <table class="table table-borderless">
                                     <thead>
                                         <tr>
                                             <th scope="col">Email</th>
@@ -222,7 +228,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- THE RIGHT SIDE OF THE CONTAINER CONTAINING OVERVIEW AND WORKLIST SUMMARY -->
                     <div class="col-lg-3 col-12   right-container  ">
+                        <!-- OVERVIEW -->
                         <div class="profile-container">
                             <div class="profile-header me-lg-4  me-5 pt-5">
                                 <div class="profile-text">
@@ -244,6 +252,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- WORKLIST -->
                         <div class="worklists-container">
                             <div class="worklist-header d-flex justify-content-around align-items-center">
                                 <div class="worklist-text mt-0 me-3 ">
@@ -311,7 +320,7 @@
                 </div>
             </div>
         </section>
-        <!-- Modal -->
+        <!-- MODAL FOR PROFILE CONTAINING PERSONAL DETAIL MODAL AND CONTACT DETAILS MODAL -->
         <div
             class="modal fade"
             id="edit-personal-details"

@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #12a15d;
+  --secondary-color: #ffffff;
+  --background-color: #f9f9f9;
+}
+
 body {
   background-color: #f9f9f9;
 }
@@ -18,6 +24,17 @@ a:hover {
 .main-container {
   background-color: #f9f9f9;
   margin-top: 63px;
+}
+.full-container {
+  overflow: hidden;
+  height: 89vh;
+}
+.first-container {
+  overflow-y: auto;
+  height: 90vh;
+}
+.first-container::-webkit-scrollbar {
+  display: none;
 }
 .profile-container {
   background-color: #fcfff2;
@@ -88,10 +105,15 @@ a:hover {
   font-size: 20px;
   color: #12a15d;
 }
+.work-list-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
 .worklists-container {
   background-color: #ffffff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-bottom: 50px;
 }
 
 .card-body .card-title .dispute,
@@ -106,8 +128,10 @@ a:hover {
 .card-body .card-title .claim {
   color: #12a15d;
 }
-.card-body {
-  padding: 0.2rem 1rem;
+.worklist-card {
+  padding: 3px 4px;
+  border-radius: 10px;
+  height: 93px;
 }
 .card-body .card-title .new {
   background: #12a15d;
@@ -119,4 +143,52 @@ a:hover {
 .card-body .card-title .arrow-right .fa-solid {
   font-size: 22px;
   color: #12a15d;
+}
+
+/* QUICK ACTION STYLE */
+.quick-action-card {
+  background-color: #fff;
+  border-radius: 12px;
+  height: 120px;
+  width: 110px;
+}
+.fa-check,
+.fa,
+.number {
+  background-color: var(--primary-color);
+  padding: 3px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+.number {
+  background-color: red;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 74px;
+}
+
+.image {
+  width: 40px;
+}
+/* PROPERTY CONTAINER */
+.veiw-all-button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 15px;
+  border: 1px solid var(--primary-color);
+  padding: 6px;
+  outline: none;
+}
+.veiw-all-button a {
+  color: #fff !important;
+}
+@media (max-width: 1000px) {
+  .full-container {
+    overflow: none;
+    height: auto;
+  }
+  .first-container {
+    overflow-y: none;
+    height: auto;
+  }
 }

@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/work-list.css">
         <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/card.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -19,7 +20,7 @@
         >
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=M+PLUS+Rounded+1c:wght@700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,900&family=Ms+Madi&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Water+Brush&display=swap" rel="stylesheet">
-        <title>Document</title>
+        <title>WorkList</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top  ">
@@ -184,8 +185,13 @@
                                                         <span class="dispute-text">Dispute</span>
                                                         <div class="new me-3">New</div>
                                                     </div>
-                                                    <div class="col-6 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                    <div class="col-6 text-start" id="left-arrow-dispute">
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -248,7 +254,12 @@
                                                         <div class="new me-3">New</div>
                                                     </div>
                                                     <div class="col-6 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -266,31 +277,15 @@
                                                 <div class="row d-flex justify-content-between align-items-center">
                                                     <div class="col-9 d-flex">
                                                         <span class="claim-text">Claim Request</span>
-                                                        <div class="new me-3">New</div>
+                                                        <div class="new  me-0 me-lg-3">New</div>
                                                     </div>
-                                                    <div class="col-2 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h5 class="card-text">
-                                                Property
-                                                <span id="property-number">1234680</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-12 mb-3" id="claim-request">
-                                    <div class="card" id="worklist-card">
-                                        <div class="card-body">
-                                            <div class="cardheader mb-2">
-                                                <div class="row d-flex justify-content-between align-items-center">
-                                                    <div class="col-9 d-flex">
-                                                        <span class="claim-text">Claim Request</span>
-                                                        <div class="new me-3">New</div>
-                                                    </div>
-                                                    <div class="col-2 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                    <div class="col-2 text-start" id="left-arrow-claim">
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -308,10 +303,41 @@
                                                 <div class="row d-flex justify-content-between align-items-center">
                                                     <div class="col-9 d-flex">
                                                         <span class="claim-text">Claim Request</span>
-                                                        <div class="new me-3">New</div>
+                                                        <div class="new me-0 me-lg-3">New</div>
                                                     </div>
                                                     <div class="col-2 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="card-text">
+                                                Property
+                                                <span id="property-number">1234680</span>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12 mb-3" id="claim-request">
+                                    <div class="card" id="worklist-card">
+                                        <div class="card-body">
+                                            <div class="cardheader mb-2">
+                                                <div class="row d-flex justify-content-between align-items-center">
+                                                    <div class="col-9 d-flex">
+                                                        <span class="claim-text">Claim Request</span>
+                                                        <div class="new  me-0 me-lg-3">New</div>
+                                                    </div>
+                                                    <div class="col-2 text-start" id="left-arrow">
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -332,7 +358,12 @@
                                                         <div class="new me-3">New</div>
                                                     </div>
                                                     <div class="col-6 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -353,7 +384,9 @@
                                                         <div class="new me-3">New</div>
                                                     </div>
                                                     <div class="col-6 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                        <a href="dues.html">
+                                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -374,7 +407,12 @@
                                                         <div class="new me-3">New</div>
                                                     </div>
                                                     <div class="col-6 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -395,7 +433,12 @@
                                                         <div class="new me-3">New</div>
                                                     </div>
                                                     <div class="col-6 text-start" id="left-arrow">
-                                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                        <i
+                                                            class="fa fa-arrow-right"
+                                                            aria-hidden="true"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#property-card"
+                                                        ></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -413,53 +456,112 @@
             </div>
         </div>
     </div>
-    <!-- Button trigger modal -->
-    <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
-    >
-        Launch static backdrop modal
-    </button>
+    <!-- MODAL FOR CARDS -->
     <!-- Modal -->
     <div
         class="modal fade"
-        id="staticBackdrop"
+        id="property-card"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
     >
-        <div class="modal-dialog  ">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-card modal-lg" style="max-width: 380px;">
             <div class="modal-content">
-                <div class="card" style="width: 100%;">
-                    <img src="image/house.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-6">
-                                <h5 class="card-title">Property 1235909</h5>
+                <img src="image/house.jpg" alt="" class="img-fluid">
+                <div class="modal-content-body">
+                    <div class="modal-header row d-flex ">
+                        <div class="txt col-6">
+                            <h5>Property 1238909</h5>
+                        </div>
+                        <div class="stat col-6">
+                            <div class="status">
+                                Under-Validation
                             </div>
-                            <span class="col-5">
-                                <div class="status-tag">Under Validation</div>
-                            </span>
                         </div>
-                        <div class="info">
-                            <ul>
-                                <li>
-                                    <p>Address</p>
-                                    <p class="lead">No.2 Ahmadu Bello Street, Maltama; Abuja</p>
-                                </li>
-                            </ul>
+                        <div class="modal-body">
+                            <div class="address">
+                                <p class="txt">Address</p>
+                                <p class="text-muted  fs-6">No. 2 Adamu Bello Street. Maitama; Abuja</p>
+                            </div>
+                            <div class="features">
+                                <div class="size">
+                                    <p class="txt">Size</p>
+                                    <p class="text-muted  fs-6">2.7 acres</p>
+                                </div>
+                                <div class="LGA">
+                                    <p class="txt">Local Government Area</p>
+                                    <p class="text-muted  fs-6">Wuse LGA</p>
+                                </div>
+                            </div>
+                            <!-- ATTACHMENT OF DOCUMENT -->
+                            <div class="attachment">
+                                <div class="txt mb-3">
+                                    <p>Attachment</p>
+                                </div>
+                                <div class="attached-document row d-flex justify-content-start ">
+                                    <div class="doc col-4 me-2">
+                                        <img
+                                            src="image/pdf.png"
+                                            alt=""
+                                            class="img-fluid"
+                                            style="height:100%;"
+                                        >
+                                    </div>
+                                    <div class="doc col-4 me-2">
+                                        <img
+                                            src="image/pdf.png"
+                                            alt=""
+                                            class="img-fluid"
+                                            style="height:100%;"
+                                        >
+                                    </div>
+                                    <div class="doc col-4 me-2">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="mt-4">
+                                    <div class="date text-muted text-start" id="date-comment">14 Jan</div>
+                                    <label for="exampleFormControlInput1" class="form-label txt">Disputer's Comment</label>
+                                    <textarea class="form-control  text-muted " aria-label="With textarea" rows="7"></textarea>
+                                </div>
+                                <div class="mt-4">
+                                    <div class="date text-muted text-start" id="date-reply">15 Jan</div>
+                                    <label for="exampleFormControlInput1" class="form-label txt">Reply</label>
+                                    <textarea class="form-control description text-muted " aria-label="With textarea" rows="7"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-start mt-4 ms-3">
+                                <button
+                                    class="btn add-document-btn "
+                                    id="add-property"
+                                    data-bs-toggle="modal"
+                                    data-bs-dismiss="modal"
+                                >Approve</button>
+                                <button
+                                    class="btn add-document-btn add-property"
+                                    id="add-property"
+                                    data-bs-toggle="modal"
+                                    data-bs-dismiss="modal"
+                                >Decline</button>
+                                <button
+                                    class="btn add-document-btn bg-white "
+                                    id="back"
+                                    data-bs-toggle="modal"
+                                    data-bs-dismiss="modal"
+                                >Back</button>
+                            </div>
                         </div>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/form.js"></script>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>

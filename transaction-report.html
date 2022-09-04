@@ -80,16 +80,16 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="#">Property</a>
+                                    <a class="dropdown-item" href="property-report.html">Property Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">User Report</a>
+                                    <a class="dropdown-item" href="user-report.html">User Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Tansaction Report</a>
+                                    <a class="dropdown-item" href="transaction-report.html">Tansaction Report</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Activity Report</a>
+                                    <a class="dropdown-item" href="activites.html">Activity Report</a>
                                 </li>
                             </ul>
                         </li>
@@ -124,7 +124,7 @@
                 <div class="col-12 mt-4">
                     <div class="container p-5 ">
                         <div class="table-header row d-flex justify-content-between align-items-center  ">
-                            <div class=" col-lg-3 col-12 text-center ms-5 ps-5 user">
+                            <div class=" col-lg-3 col-12 text-center me-4 me-lg-0 mb-2 ps-5 user">
                                 <h4>Transaction Report</h4>
                             </div>
                             <div class="header-button col-lg-8 col-12 ">
@@ -156,7 +156,7 @@
                             </div>
                         </div>
                         <div class="table-body  mt-4">
-                            <table class="table table-borderless table-responsive">
+                            <table class="table  table-responsive">
                                 <thead>
                                     <tr>
                                         <th scope="col">Transaction ID</th>
@@ -258,13 +258,14 @@
             <div class="modal-dialog modal-dialog-centered modal-lg  ">
                 <div class="modal-content">
                     <div class="modal-header row justify-content-between text-center">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-6 align-self-start order-2">
+                            <!-- FLITER STATE BUTTON -->
                             <div class="select-state">
                                 <div class="btn-group" role="group">
                                     <button
                                         id="btnGroupDrop1"
                                         type="button"
-                                        class="btn state-btn dropdown-toggle"
+                                        class="btn state-btn dropdown-toggle "
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                     >
@@ -281,10 +282,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 ">
-                            <h5 class="modal-text">Documents</h5>
+                        <div class="col-lg-3 col-12  order-lg-1 ">
+                            <h4 class="modal-text">Documents</h4>
                         </div>
-                        <div class="col-4 ">
+                        <div class="col-lg-4  px-md-4 col-6">
+                            <!-- ADD DOCUMENT BUTTON -->
                             <div class="add-document">
                                 <div class="" role="group">
                                     <button
@@ -304,7 +306,7 @@
                         </div>
                     </div>
                     <div class="modal-body">
-                        <div class="modal-document-count">
+                        <div class="modal-document-count text-center">
                             <h5>
                                 Documents for
                                 <span id="state">Abuja</span>
@@ -315,39 +317,33 @@
                         </div>
                         <div class="row justify-content-center mt-3 ">
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center ">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0  " id="cancel"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
-                                    Addition of Properties
-                                    <i class=" fa fa-times me-4"></i>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
-                                    Addition of Dues
-                                    <i class=" fa fa-times me-4"></i>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-9 mb-2">
-                                <div class="property-clearance">
+                                <div class="property-clearance text-center">
                                     Property Clearance
-                                    <i class=" fa fa-times me-4"></i>
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-9 mb-2">
+                                <div class="property-clearance text-center">
+                                    Property Clearance
+                                    <i class=" fa fa-times me-lg-2 me-0" id="cancel"></i>
                                 </div>
                             </div>
                         </div>
@@ -545,6 +541,7 @@
                 </div>
             </div>
         </div>
+        <!-- ESTATE MODAL -->
         <div
             class="modal fade"
             id="estate-add"
